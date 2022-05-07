@@ -1,0 +1,19 @@
+﻿@model OtelRezervasyonMvc.Models.Entity.Tbl_Mesajlar
+
+<div  class="map-content-9 mt-lg-0 mt-4 ">
+    <form action="/İletisim/Index" id="my_form" method="post">
+        <div class="twice-two">
+            <input type="text" class="form-control" name="Gonderen" id="w3lName" placeholder="Adınız"
+                   required="">
+            <input type="email" class="form-control" name="Mail" id="w3lSender" placeholder="Mail Adresiniz"
+                   required="">
+        </div>
+        <div class="twice">
+            <input type="text" class="form-control" name="Konu" id="w3lSubject"
+                   placeholder="Konu" required="">
+        </div>
+        <textarea id="input-url" name="Mesaj" class="form-control" placeholder="Mesajınız"
+                  required=""></textarea>
+        <button type="submit" onclick="alert('Mail Gönderiminiz Başarılı...')"  class="btn btn-contact">Gönder</button>
+    </form>
+</div>

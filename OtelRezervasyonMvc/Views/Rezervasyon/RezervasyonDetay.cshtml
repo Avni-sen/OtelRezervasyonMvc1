@@ -1,0 +1,37 @@
+﻿@model OtelRezervasyonMvc.Models.Entity.Tbl_OnRezervasyon
+@{
+    ViewBag.Title = "RezervasyonDetay";
+    Layout = "~/Views/Shared/_MisafirLayout.cshtml";
+}
+
+
+
+<br />
+<h2>RezervasyonDetay</h2>
+<br />
+
+<label>Adı Soyadı :</label>
+<br />
+@Html.TextBoxFor(x => x.AdSoyad, new { @class = "form-control", @readonly = "readonly" })
+<br />
+<label>Telefon :</label>
+<br />
+@Html.TextBoxFor(x => x.Telefon, new { @class = "form-control", @readonly = "readonly" })
+<br />
+<label>Mail Adresi :</label>
+<br />
+@Html.TextBoxFor(x => x.Mail, new { @class = "form-control", @readonly = "readonly" })
+<br />
+<label>Giriş Tarihi :</label>
+<br />
+@Html.TextBoxFor(x => x.GirisTarih, new { @class = "form-control", @readonly = "readonly" })
+<br />
+<label>Çıkış Tarihi :</label>
+<br />
+@Html.TextBoxFor(x => x.CikisTarih, new { @class = "form-control", @readonly = "readonly" })
+<br />
+<label>Açıklama :</label>
+<br />
+@Html.TextAreaFor(x => x.Aciklama, new { @class = "form-control ", @readonly = "readonly", @TextMode = "MultiLine", @Rows = "6", @Columns = "50" })
+
+

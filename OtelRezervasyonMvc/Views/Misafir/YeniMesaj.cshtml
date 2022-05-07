@@ -1,0 +1,23 @@
+﻿@model OtelRezervasyonMvc.Models.Entity.Tbl_Mesaj2
+@{
+    ViewBag.Title = "YeniMesaj";
+    Layout = "~/Views/Shared/_MisafirLayout.cshtml";
+}
+
+
+
+<br />
+<h2>Yeni Mesaj</h2>
+<br />
+
+<form method="post">
+    <label>Mesajın Konusu</label>
+    <br />
+    @Html.TextBoxFor(x => x.Konu, new { @class = "form-control" })
+    <br />
+    <label>Mesaj İçeriği</label>
+    <br />
+    @Html.TextAreaFor(x => x.Mesaj, new { @class = "form-control ", @TextMode = "MultiLine", @Rows = "6", @Columns = "50" })
+    <br />
+    <button type="submit" class="btn btn-warning">Mesajı Gönder</button>
+</form>

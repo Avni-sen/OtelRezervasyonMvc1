@@ -1,0 +1,168 @@
+﻿@using OtelRezervasyonMvc.Models.Entity
+@model List<Tbl_Hakkimda>
+@{
+    ViewBag.Title = "Hakkimda";
+    Layout = "~/Views/Shared/_OtelVitrin.cshtml";
+}
+
+<!-- //w3l-header -->
+<section class="w3l-breadcrumb">
+    <div class="breadcrum-bg py-sm-5 py-4">
+        <div class="container py-lg-3">
+
+            <h2>Otelimiz Hakkında</h2>
+            <p><a href="/Anasayfa/Index">Anasayfa</a> &nbsp; / &nbsp; Hakkımızda</p>
+
+        </div>
+    </div>
+</section>
+@foreach (var x in Model)
+{
+    <div class="w3l-about-us best-rooms py-5">
+        <div class="container py-lg-5 py-sm-4">
+            <div class="maghny-gd-1">
+                <div class="row about-text">
+                    <div class="col-lg-6">
+                        <h3 class="title-big">
+                            @x.hakkimda1
+                        </h3>
+                    </div>
+                    <div class="col-lg-6">
+                        <p>
+                            @x.hakkimda2
+                        </p>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="maghny-gd-1 col-lg-4 col-md-6">
+                        <div class="maghny-grid">
+                            <figure class="effect-lily border-radius">
+                                <img class="img-fluid" src="~/hotels-starter/assets/images/p1.jpg">
+                                <figcaption class="w3set-hny">
+                                    <div>
+                                        <h4>En Kaliteli Restaurant Hizmetleri </h4>
+                                        <p>Kahvaltı ve Akşam Yemeği</p>
+                                    </div>
+
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="maghny-gd-1 col-lg-4 col-md-6 mt-md-0 mt-4">
+                        <div class="maghny-grid">
+                            <figure class="effect-lily border-radius">
+                                <img class="img-fluid" src="~/hotels-starter/assets/images/p3.jpg">
+                                <figcaption class="w3set-hny">
+                                    <div>
+                                        <h4>Spa ve Yüzme Havuzları</h4>
+                                        <p>Open Daily </p>
+                                    </div>
+
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="maghny-gd-1 col-lg-4 col-md-6 mt-lg-0 mt-4">
+                        <div class="maghny-grid">
+                            <figure class="effect-lily border-radius">
+                                <img class="img-fluid" src="~/hotels-starter/assets/images/p2.jpg">
+                                <figcaption class="w3set-hny">
+                                    <div>
+                                        <h4>En İyi Odalarımız Sizleri Bekliyor</h4>
+                                        <p>Özel Odalar</p>
+                                    </div>
+
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="w3-about-2" id="features">
+        <div class="w3-services-ab py-5">
+            <div class="container py-lg-4 py-md-3">
+                <div class="title-section">
+
+                    <div class="title-line">
+                    </div>
+                </div>
+                <div class="row w3-services-grids">
+                    <div class="col-lg-9 w3-services-right-grid pl-lg-5 mx-auto">
+                        <h4 class="mb-md-5 mb-4">Kaliteli Hizmeti , Sizlere Her An Hissettiriyoruz.</h4>
+                        <div class="fea-gd-vv row">
+                            <div class="col-md-6">
+                                <div class="float-lt feature-gd">
+                                    <div class="icon"> <span class="fa fa-glass" aria-hidden="true"></span></div>
+                                    <div class="icon-info">
+                                        <h5>Bar ve Eğlence Alanlarında Sınırsız İçki Hizmeti</h5>
+                                        <p>
+                                            Barlarımızda Saat 10:00-02:00 arasında ücretsiz içecek hizmetimizden yararlanabilirsiniz.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-md-0 mt-4">
+                                <div class="float-mid feature-gd">
+                                    <div class="icon"> <span class="fa fa-ship" aria-hidden="true"></span></div>
+                                    <div class="icon-info">
+                                        <h5>Bisiklet ve Yat Gezileri</h5>
+                                        <p>
+                                            Tabiat Parkı Sporları ve Ege Denizinde Gezinti Avantajlarımızdan Yararlanabilirsiniz.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-4 pt-md-2">
+                                <div class="float-rt feature-gd">
+                                    <div class="icon"> <span class="fa fa-wifi" aria-hidden="true"></span></div>
+                                    <div class="icon-info">
+                                        <h5>Ücretsiz WIFI Alanları</h5>
+                                        <p>
+                                            Her Oda ve Ortak Alanlarda Süper Hızlı İnternet İle Sosyal Medyada Dolaşın.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-4 pt-md-2">
+                                <div class="float-lt feature-gd">
+                                    <div class="icon"> <span class="fa fa-hand-lizard-o" aria-hidden="true"></span></div>
+                                    <div class="icon-info">
+                                        <h5>Spa Merkezlerimiz</h5>
+                                        <p>
+                                            Hotel içerisinde yer alan Nape'a Spa, uzman masörler tarafından gerçekleştirilen masajlarla sizlere huzur dolu bir gün vaadediyor.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- team -->
+    @Html.Action("Ekibimiz", "Default")
+    <!-- team -->
+    <section class="w3l-stats">
+        <div class="main-w3 py-5">
+            <div class="container py-lg-3">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 title">
+                        <h3 class="title-big">@x.hakkimda3</h3>
+                        <p class="mt-4">
+                            @x.hakkimda4
+                        </p>
+                    </div>
+                    @Html.Action("Istatistik", "Default")
+                </div>
+
+            </div>
+        </div>
+    </section>
+    @Html.Action("Referans", "Default")
+}

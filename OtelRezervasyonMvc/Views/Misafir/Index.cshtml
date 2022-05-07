@@ -1,0 +1,55 @@
+﻿@model OtelRezervasyonMvc.Models.Entity.Tbl_YeniKayit
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_MisafirLayout.cshtml";
+}
+
+<h2>Profil Sayfası</h2>
+<br />
+@using (Html.BeginForm("MisafirBilgiGüncelle", "Misafir", FormMethod.Post))
+{
+    <div class="row form-group">
+        @Html.HiddenFor(x => x.ID, new { @class = "form-control", @readonly = "readonly" })
+        <div class="col">
+            <label>Adı Soyadı</label>
+            <br />
+            @Html.TextBoxFor(x => x.AdSoyad, new { @class = "form-control" })
+        </div>
+        <div class="col">
+            <label>Mail Adresi</label>
+            <br />
+            @Html.TextBoxFor(x => x.Mail, new { @class = "form-control" })
+        </div>
+
+    </div>
+    <br />
+    <div class="row">
+        <div class="col">
+            <label>Şifre</label>
+            @Html.TextBoxFor(x => x.Sifre, new { @class = "form-control" })
+        </div>
+        <div class="col">
+            <label>Telefon Numarası</label>
+            <br />
+            @Html.TextBoxFor(x => x.Telefon, new { @class = "form-control " })
+        </div>
+        <div class="col">
+            <label>Tc Kimlik Numarası</label>
+            <br />
+            @Html.TextBoxFor(x => x.TC, new { @class = "form-control " })
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col">
+            <label>Adresi</label>
+            <br />
+            @Html.TextAreaFor(x => x.Adres, new { @class = "form-control ", @TextMode = "MultiLine", @Rows = "2", @Columns = "50" })
+        </div>
+
+        <div class="col-12 p-3">
+            <button type="submit" class="btn btn-warning">Bilgileri Güncelle</button>
+        </div>
+    </div>
+}
+
